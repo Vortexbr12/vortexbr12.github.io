@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h1 style="text-align: center;">Tratamento correto</h1> 
+    <fieldset>
+    <table>
+        <tr>
+       <td><input type="checkbox" name="Nome" id="Nome" checked > Nome: </td>
+       <td><input type="text" name="nome" id="nome" size="100" required></input><br></td>
+       </tr>
+       <tr>
+        <td><br><input type="checkbox" name="cpf" id="cpf" checked> CPF: </td>
+        <td><br><input type="text" name="nome" id="nome" size="60" required></input><br></td>
+        <td><label>❓</label></td><br>
+        <td><label> Utilizamos on CPF para validar junto á Receita Federal a sua identidade</label></td>
+       </tr>
+        <tr>
+            <td><input type="checkbox" name="idade" id="idade" checked> idade: </td>
+            <td><input type="number" name="quantidade" id="quantidade" size="60" min="17" max="100" required></input><br></td>
+            <td><label>❓</label></td><br>
+            <td><label> Este serviço só pode ser acessado por maiores de 17 anos, por isso precisamos armazenar a sua idade</label></td>
+        <tr>
+            <td><label>Genero</label>
+            <td><select name="genero" id="genero">
+                <option value="0">selecionar</option>
+                <option value="0">Feminimo</option>
+                <option value="0">Masculino</option>
+            </select>
+            <td><label>❓</label></td><br>
+            <td><label> Opcional - Não precisamos do genero, contudo  se informado o serviço será customizado para voce.</label></td>
+        </tr>
+        <tr>
+           <td> A proteção de dados é nossa prioridade.Para obtém mas informaçoes sobre como tratamento dos seus dados clique aqui para acessar nossa Politica de Privacidade.</td>
+        </tr>
+
+    </fieldset>
+    </table>
+    <br>
+    <input type="submit" name="bntEnviar" value="Enviar"> 
+    <a href="terc.html">voltar</a>
+
+
+</body>
+</html>

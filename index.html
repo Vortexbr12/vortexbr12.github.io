@@ -4,161 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function validateForm() {
-            try {
-                let cpf = document.getElementById('cpf').value;
-                if (cpf.length !== 11) {
-                    throw 'CPF deve ter 11 dígitos';
-                }
-
-                let email = document.getElementById('E-mail').value;
-                let confirmarEmail = document.getElementById('Confirmar').value;
-                if (email !== confirmarEmail) {
-                    throw 'E-mails não coincidem';
-                }
-
-                let senha = document.getElementById('Senha').value;
-                let confirmarSenha = document.getElementById('Confirmar').value;
-                if (senha !== confirmarSenha) {
-                    throw 'Senhas não coincidem';
-                }
-
-                let nome = document.getElementById('Nome').value;
-                if (nome === '') {
-                    throw 'Nome não pode estar vazio';
-                }
-
-                let sobrenome = document.getElementById('Sobrenome').value;
-                if (sobrenome === '') {
-                    throw 'Sobrenome não pode estar vazio';
-                }
-
-                let nascimento = document.getElementById('Nascimento').value;
-                if (nascimento === '') {
-                    throw 'Data de nascimento é obrigatória';
-                }
-
-                let rg = document.getElementById('RG').value;
-                if (rg.length !== 10) {
-                    throw 'RG deve ter 10 dígitos';
-                }
-
-                let sexo = document.getElementById('Sexo').value;
-                if (sexo === 'Selecione') {
-                    throw 'Selecione um sexo';
-                }
-
-                let cep = document.getElementById('Cep').value;
-                if (cep === '') {
-                    throw 'CEP é obrigatório';
-                }
-
-                let endereco = document.getElementById('Endereço').value;
-                if (endereco === '') {
-                    throw 'Endereço é obrigatório';
-                }
-
-                let numero = document.getElementById('Numero').value;
-                if (numero === '') {
-                    throw 'Número é obrigatório';
-                }
-
-                let bairro = document.getElementById('Bairro').value;
-                if (bairro === '') {
-                    throw 'Bairro é obrigatório';
-                }
-
-                let celular = document.getElementById('Celular').value;
-                if (celular === '') {
-                    throw 'Celular é obrigatório';
-                }
-                
-            } catch (error) {
-                alert("Erro: " + error);
-                return false;
-            }
-        }
-    </script>
 </head>
 <body>
-    <form action="" method="post" onsubmit="return validateForm()">
-    
-    <h1>Cadastre-se</h1>
-    
-        <fieldset>           
-         <legend>Dados de Login</legend>
-         <table>
-         <tr>
-        CPF<br>
-        <input type="text" name="cpf" id="cpf" min="11" maxlength="11" placeholder="___.___.___-__ " required style="height: 20px; width: 200px;"><br>
-        <td>E-mail<br>
-        <input type="email" name="E-mail" id="E-mail" style="height: 20px; width: 200px;" required></td><br>
-        <td>Confirmar<br>
-        <input type="email" name="Confirmar" id="Confirmar" style="height: 20px; width:200px ;" required></td><br>
-        <td>Senha<br>
-        <input type="text" name="Senha" id="Senha" style="width: 100px; height: 20px;" required></td>
-        <td>Confirmar<br>
-        <input type="password" name="Confirmar" id="Confirmar" style="width: 100px; height: 20px;" required></td>
-        </tr>    
-    </table>
-    </fieldset>
+    <h1> formulario</h1>
+    <a style="font-size: larger;" href="pagina.html">Cadastro de usuario</a><br>
+    <a style="font-size: larger;" href="form2.html">Cadastro de cliente</a><br>
+    <a style="font-size: larger;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Secreto</a>
 
-    <form action="" method="post">
-        <fieldset>
-        <legend>Dados de Contato</legend>
-        <table>
-            <tr>
-                <td>Nome<br>
-                <input type="text" name="Nome" id="Nome" style="width: 300px; height: 20px;" required></td>
-                <td><label>Sobrenome</label>
-                <input type="text" name="Sobrenome" id="Sobrenome" style=" width:300px; height: 20px;" required></td>
-            </tr>
-            <tr>
-                    <td><label>Nascimento</label><br>
-                <input type="date" name="Nascimento" id="Nascimento" style="height: 24px;" required></td>
-                <td>RG<br>
-                <input type="text" name="RG" id="RG" style="width: 250px;height: 20px;" min="10" max="10" required></td>
-                 <td><label>Sexo</label><br>
-                 <select name="Sexo" id="Sexo" style="width: 200px; height: 30px;" required>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
-                 </select></td>   
-            </tr>
-            <tr>
-                <td><label>Cep</label><br>
-                <input type="text" name="Cep" id="Cep" style="height: 20px; width: 150px;" required></td>
-                <td><label>Endereço</label><br>
-                <input type="text" name="Endereço" id="Endereço" style="width: 300px; height: 20px;" required></td>
-                <td><label>Numero</label><br>
-                <input type="text" name="Numero" id="Numero" style="width: 200px; height: 20px;" required></td>
-            </tr>
-            <tr>
-                <td><label>Bairro</label><br>
-                <input type="text" name="Bairro" id="Bairro" style="width: 200px; height: 20px;" required></td>
-                <td><label>Complemento</label><br>
-                    <input type="text" name="Complemento" id="Complemento" style="width: 200px; height: 20px;"></td>
-                    <td><label>Cidade</label><br>
-                        <input type="text" name="Cidade" id="Cidade" style="width: 200px; height: 20px;" required></td>
-            </tr>
-            <tr>
-                <td><label>Estado</label><br>
-                    <select name="Estado" id="Estado" style="height: 20px;" required>
-                        <option value="Selecione">Selecione</option>
-                        <option value="SP">SP</option>
-                        <option value="MG">MG</option>
-                        <option value="PB">PB</option>
-                    </select>
-                    <td><label>DDD+Telefone</label><br>
-                        <input type="text" name="Telefone" id="Telefone" style="width: 200px; height: 20px;"></td>
-                        <td><label>DDD+Celular</label><br>
-                            <input type="text" name="Celular" id="Celular" style="width: 200px; height: 20px;" required></td>
-            </tr>
-        </table>
-        </fieldset>
-        <br><input type="submit" name="btnEnviar" value="Enviar">
-        <br><br><input type="reset" name="btnLimpar" value="Limpar">
-        <a href="terc.html">voltar</a>
-    </form>
+
+
+
+
 </body>
 </html>
